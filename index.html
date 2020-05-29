@@ -1,10 +1,15 @@
 <!DOCTYPE html>
-<html lang='en'>
+<html lang="en">
 
 <head>
-	<meta charset='utf-8'>
-	<title>Code Review Max Strauss</title>
-	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+
+
+	<title>Insurance CF - Get your quote today!</title>
 </head>
 
 <body>
@@ -13,11 +18,11 @@
 
 	<header>
 		<span id="logo">
-			<img src="img/logo-newspaper-cf.png" alt="CF Logo">
+			<img src="img/logo.png" alt="CF Logo">
 		</span>
 		<span id="banner1">
 			<a href="https://codefactory.wien/" target="_blank">
-				<image src="img/banner-1.png" alt="Banner1">
+				<image src="img/banner.png" alt="Banner">
 			</a>
 		</span>
 	</header>
@@ -26,135 +31,135 @@
 
 	<nav>
 		<ul>
-			<li><a href="#home">Home</a></li>
-			<li><a href="#tech">Tech</a></li>
-			<li><a href="#culture">Culture</a></li>
-			<li><a href="#video">Video</a></li>
+			<li><a id="currentpage" href="#home">Home</a></li>
+			<li><a href="team.html">Team</a></li>
+			<li><a href="aboutus.html">About us</a></li>
 		</ul>
 	</nav>
 
+	<h1 id="title">Car Insurance</h1>
 
+	<!-- Quote box -->
 
 	<main>
-		<!-- Date -->
-		<div id="date">Saturday, 23.05.2029</div>
+		<div id="container">
+			<div id=quotebox>
 
-		<!-- Top news banner -->
-		<div id="topnews">
-			<p>Top news</p>
+				<h1>Great coverages begins with a custom quote</h1>
+
+				<div id="row">
+					<div>
+						<p>Your Name</p>
+						<input type="text" id="name" placeholder="Your Name">
+					</div>
+
+					<div>
+						<p>Your Age</p>
+						<input type="text" id="age" placeholder="Your Age">
+					</div>
+				</div>
+				<div id="row">
+					<div>
+						<p>Your Country</p>
+						<select id="country">
+							<option>Choose your country</option>
+							<option>Austria</option>
+							<option>Hungary</option>
+							<option>Greece</option>
+						</select>
+					</div>
+					<div>
+						<p>Horsepower</p>
+						<input type="text" id="hp" placeholder="0">
+					</div>
+				</div>
+
+				<input type="submit" id="submitbutton" value="Calculate">
+
+			</div>
 		</div>
 
-		<!--Sidebanner 1-->
-		<div class="sidebanner" ID="FSWDdesktop"><a href="https://www.codefactory.wien" target="_blank">
-				<img src="img/banner-2.png" alt="Sidebanner 1"></a>
+		<!-- Quote result -->
+
+
+		<div id="container2">
+			<div id="quoteresult">
+				<div>
+					<p id="result"></p>
+				</div>
+			</div>
 		</div>
 
-		<!--Article row 1-->
-		<div>
-			<article><a target="_blank" href="article.html">
-					<img src="img/nasa.png" alt="NASA image">
-					<p>NASA is trying to squash conspiracy theories about the space station leak</p>
-				</a>
-			</article>
 
-			<article><a target="_blank" href="article.html">
-					<img src="img/eu.png" alt="EU image">
-					<p>EU approves controversial Copyright Directive, including internet ‘link tax’</p>
-				</a>
-			</article>
+		<!-- Infotext -->
 
-			<article><a target="_blank" href="article.html">
-					<img src="img/jeff.png" alt="jeff image">
-					<p>Jeff Bezos is going to create schools where ‘the child is the customer’</p>
-				</a>
-			</article>
-
-			<article id="fswdmobile"><a href="https://www.codefactory.wien" target="_blank">
-					<img src="img/banner-mobile-fswd.png" alt="FSWD mobile banner"></a>
-			</article>
+		<div id="container">
+				<article id="infotext">
+					<div id=background>
+						<h2>Un-complicating car coverage</h2>
+						<p>Understanding your coverage shouldn't be so hard. We'll guide you through available coverage types,
+							starting with who and what is covered.</p>
+					</div>
+				</article>
 		</div>
 
-		<!-- Popular banner -->
-		<div id="topnews">
-			<p>Popular</p>
-		</div>
-
-		<!-- Article row 2 -->
-		<div>
-			<article><a target="_blank" href="article.html">
-					<img src="img/polar.png" alt="polar image">
-					<p>Polar’s new fitness watch will measure the wattage of your exercise</p>
-				</a>
-			</article>
-
-			<article><a target="_blank" href="article.html">
-					<img src="img/musk.jpg" ali="musk image">
-					<p>Elon Musk smokes marijuana live on web show</p>
-				</a>
-			</article>
-
-			<article><a target="_blank" href="article.html">
-					<img src="img/snowden.jpg" alt="snowden image">
-					<p>Edward Snowden surveillance powers ruled unlawful</p>
-				</a>
-			</article>
-
-			<!-- Ad banner-->
-
-			<div id="banner3">
-				<a href="https://www.codefactory.wien" target="_blank">
-					<img src="img/banner-3.png" alt="Banner 3"></a>
+		<div id="container3">
+			<div id="infobox">
+				<h3>What comes standard</h3>
+				<h4>The coverage you need</h4>
+				<ul>
+					<li>Bodily Injury Liability</li>
+					<li>Property Damage</li>
+					<li>Medical Payments</li>
+				</ul>
+				<hr>
+				<h3>Benefits</h3>
+				<p>12-month rate guarantee | 24/7 customer cervice | Lifetime Repair Guarantee</p>
+			</div>
+			<div id="infobox">
+				<h3>Add-on protection & coverage</h3>
+				<h4>For more peace of mind</h4>
+				<ul>
+					<li>Better Car Replacement</li>
+					<li>Towing & Labor</li>
+					<li>Rental Car Coverage</li>
+				</ul>
+				<hr>
+				<h3>Earned Benefits</h3>
+				<p>Accident Forgiveness | New Car Replacement</p>
 			</div>
 
-			<!-- Article row 3 -->
-			<article class="articlebox"><a target="_blank" href="article.html">
-					<img src="img/iphone.png" alt="phone image">
-					<p>How to preorder the iPhone XS, XS Max, and XR</p>
-				</a>
-			</article>
 
-			<article class="articlebox"><a target="_blank" href="article.html">
-					<img src="img/smart.png" alt="smart image">
-					<p>This smart power strip lets you individually control each outlet</p>
-				</a>
-			</article>
 
-			<article class="articlebox"><a target="_blank" href="article.html">
-					<img src="img/one.png" alt="one image">
-					<p>OnePlus announces super cheap USB-C earbuds</p>
-				</a>
-			</article>
-
-			<article class="articlebox"><a target="_blank" href="article.html">
-					<img src="img/phone.png" alt="phone image">
-					<p>Spotify raises limit for offline downloads to 10,000 songs per device</p>
-				</a>
-			</article>
 		</div>
 
-		<!-- Sidebanner 2 -->
-		<div class="sidebanner" id="CFdesktop"><a target="_blank" href="https://www.codefactory.wien">
-				<img src="img/banner-4.png" alt="Sidebanner 2"></a>
-		</div>
+
+
+
 	</main>
 
+
+
 	<!-- Footer -->
+
 	<footer>
 		<nav id="navbottom">
 			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="tech.html">Tech</a></li>
-				<li><a href="culture.html">Culture</a></li>
-				<li><a href="video.html">Video</a></li>
+				<li><a id="currentpage" href="#home">Home</a></li>
+				<li><a href="team.html">Team</a></li>
+				<li><a href="aboutus.html">About us</a></li>
 			</ul>
 		</nav>
 
-		<img id="logobottom" src="img/logo-newspaper-cf.png" alt="The Logo">
+		<a href="https://codefactory.wien/" target="_blank">
+		<img id="logobottom" src="img/logo-inv.png" alt="CF Logo"></a>
 
 		<p id="footertext">Max Strauss - CodeFactory 2020</p>
 
 	</footer>
 
+
+<script type="text/javascript" src="js/script.js"></script>
 </body>
 
 </html>
